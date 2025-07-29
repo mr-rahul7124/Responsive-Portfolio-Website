@@ -527,7 +527,7 @@ img{
 }
 
 /* For medium devices */
-@media  screen and (min-width: 260px) {
+@media  screen and (min-width: 540px) {
     .nav{
         width: max-content;
     }
