@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===== REMIXICON =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="/Web Development/assets/css/style.css">
+
+    <title>portfolio website</title>
+</head>
+<body>
+    <!--===== NAV =====-->
+    <nav class="nav">
+        <ul class="nav_list">
+            <li>
+                <a href="#home" title="Home" class="nav_link active-link">
+                    <i class="ri-home-2-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects" title="Project" class="nav_link active-link">
+                    <i class="ri-folder-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#services" title="Services" class="nav_link active-link">
+                    <i class="ri-file-edit-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#experience" title="Experience" class="nav_link active-link">
+                    <i class="ri-honour-line"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" title="Contact" class="nav_link active-link">
+                    <i class="ri-send-plane-line"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--===== MAIN =====-->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <!--===== Profile =====-->
+                <div class="profile">
+                    <img src="assets/img/home-profile.png" alt="image" class="profile_img">
+
+                    <div class="profile_data">
+                        <h1 class="profile_name">Rahul <br> Saini</h1>
+
+                        <div class="profile_buttons">
+                            <a href="#projects" class="button">Projects</a>
+                            <a href="#services" class="button button_black">Services</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--===== Info =====-->
+                <div class="info">
+                    <div class="info_data">
+                        <div class="info_circle"></div>
+                        <h1 class="info_name">Rahul Saini</h1>
+                    </div>
+
+                        <div class="info_image">
+                            <img src="assets/img/about-profile.png" alt="image" class="info_img">
+                        </div>
+
+                        <p class="info_description">
+                            Passionate about creating and designing
+                            websites with the best engaging interfaces.
+                        </p>
+
+                        <a href="assets/pdf/Rahul-CV.pdf" download target="_blank" class="button button_black">Download CV</a>
+                </div>
+
+                <!--===== About =====-->
+                <div class="about">
+                    <h3 class="about_name">
+                        Mr. Rahul- <b>Web Designer & Developer</b>
+                    </h3>
+
+                    <p class="about_description">
+                        Located in Haryana, I am fresher in web development and design,
+                        carrying out several successful projects.
+                    </p>
+
+                    <div class="about_social">
+                        <a href="https://www.linkedin.com/" target="_blank" class="about_link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://www.github.com/" target="_blank" class="about_link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="about_link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="about_image">
+                        <img src="assets/img/about-profile.png" alt="image2" class="about_img">
+                    </div>
+
+                    <p class="about_note">
+                        He doesn't write message on social networks,
+                        send me an email and I'll answer you.
+                    </p>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+
+                <!--===== Skills =====-->
+                <div class="skills">
+                    <h2 class="skills_title">Skills</h2>
+
+                    <div class="skills_items">
+                        <img src="assets/img/skills-html.svg" alt="image" class="skills_item">
+                        <img src="assets/img/skills-css.svg" alt="image" class="skills_item">
+                        <img src="assets/img/skills-javascript.svg" alt="image" class="skills_item">
+                    </div>
+
+                    <p class="skills_description">
+                        Visit the Projects section to see the 
+                        work done with these web techonologies.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== Projects =====-->
+        <section class="projects section" id="projects">
+            <h2 class="section_title">Projects</h2>
+
+        </section>
+
+        <!--===== Services =====-->
+        <section class="services section" id="services">
+        </section>
+
+        <!--===== Experience =====-->
+        <section class="experience section" id="experience">
+        </section>
+
+        <!--===== Contact =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+
+            <div class="contact_container container grid">
+                <form action="" class="contact_form grid" id="contact-form">
+                    <div class="contact_group grid">
+                        <input type="text" name="username" placeholder="Name" required class="contact_input">
+                        <input type="email" name="useremail" placeholder="Email" required class="contact_input">
+                    </div>
+
+                    <textarea name="usermessage" placeholder="Message" class="contact_input contact_area"></textarea>
+
+                    <button type="submit" class="button contact_button">Send Message</button>
+
+                    <p class="contact_message" id="contact-message"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <div class="footer_content grid">
+                <a class="footer_logo">Rahul</a>
+
+                <ul class="footer_links">
+                    <li>
+                        <a href="#home" class="footer_link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="footer_link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="footer_link">Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer_social-link">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/" target="_blank" class="footer_social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://www.twitter.com/" target="_blank" class="footer_social-link">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <span class="footer_copy">
+            &#169; All Rights Reserved By Rahul Saini
+        </span>
+    </footer>
+
+    <!--===== SCROLL UP =====-->
+    <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--===== SCROLLREVEAL =====-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--===== EMAIL JS =====-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
