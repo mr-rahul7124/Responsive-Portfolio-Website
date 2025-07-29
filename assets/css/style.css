@@ -364,6 +364,77 @@ img{
 }
 
 /*===== PROJECTS =====*/
+.projects_card{
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.projects_image{
+    display: block;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects_img{
+    transition: transform .4s;
+}
+
+.projects_name{
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+
+.projects_description{
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.projects_skill{
+    width: 1rem;
+    transition: transform .4s;
+}
+
+.projects_skill:hover{
+    transform: translateY(-.25rem);
+}
+
+.projects_skills{
+    width: max-content;
+    height: 34px;
+    background-color: var(--black-color);
+    padding-inline: .75rem;
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+    border-radius: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects_button{
+    color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    transition: color .4s;
+}
+
+.projects_button i{
+    font-size: 1.25rem;
+}
+
+.projects_button span{
+    font-weight: var(--font-medium);
+}
+
+.projects_button:hover{
+    color: var(--text-color);
+}
+
+.projects_card:hover .projects_img{
+    transform: scale(1.2);
+}
 
 /*===== SERVICES =====*/
 
