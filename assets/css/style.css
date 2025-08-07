@@ -227,6 +227,19 @@ img{
     border-radius: 50%;
 }
 
+.info_circle i{
+    color: var(--white-color);
+    font-size: 1.35rem;
+    display: grid;
+    padding-top: 0.2rem;
+    place-items: center;
+}
+
+.info_circle:hover i{
+    transition: ease-in .2s;
+    padding-top: 0.1rem;
+}
+
 .info_name{
     font: var(--font-regular) var(--h1-font-size) var(--second-font);
 }
