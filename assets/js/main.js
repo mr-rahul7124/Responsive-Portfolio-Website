@@ -6,11 +6,11 @@ const sendEmail = (e) =>{
     e.preventDefault()
 
     //serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_nrso6b1','template_wlxcxsb','#contact-form','0KVTMzsdqH7N1WcpW')
+    emailjs.sendForm('service_nrso6b1','template_oq02558','#contact-form','af2iQmJR3F0mGsrqr')
 
     .then(() =>{
         // Show send message
-        contactMessage.textContent = 'Message sent successfully'
+        contactMessage.textContent = 'Message sent successfully ✅'
 
         // Remove message after five seconds
         setTimeout(() =>{
@@ -21,7 +21,7 @@ const sendEmail = (e) =>{
         contactForm.reset()
     }, () =>{
         // Show error message
-        contactMessage.textContent = 'Message not sent (service error)'
+        contactMessage.textContent = 'Message not sent (service error) ❌'
 })
 }
 contactForm.addEventListener('submit', sendEmail)

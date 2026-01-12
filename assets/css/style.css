@@ -18,10 +18,7 @@
     --text-color: hsl(var(--hue), 2%, 66%);
     --body-color: hsl(var(--hue), 100%, 1%);
     --container-color: hsl(var(--hue), 2%, 10%);
-    --conic-gradient: conic-gradient (from 150deg at 50% 45%, 
-                hsl(var(--hue), 80%, 20%) 0deg, 
-                hsl(var(--hue), 80%, 48%) 140deg, 
-                hsl(var(--hue), 80%, 20%) 360deg);
+    --conic-gradient: linear-gradient(135deg, hsl(var(--hue), 80%, 45%), hsl(var(--hue), 80%, 15%));
 
     /*===== Font and typography =====*/
     /*===== .5rem = 8px | 1rem = 16px ... =====*/
@@ -284,6 +281,7 @@ img{
 
 .about_social{
     display: flex;
+    padding: .6rem;
     justify-content: center;
     column-gap: 1.5rem;
     margin-block: 2remm;
@@ -308,7 +306,7 @@ img{
 
 .about_image{
     background: var(--conic-gradient);
-    height: 180px;
+    height: 200px;
     border-radius: 2rem;
     display: grid;
     overflow: hidden;
@@ -448,7 +446,6 @@ img{
 .projects_card:hover .projects_img{
     transform: scale(1.2);
 }
-
 /*===== SERVICES =====*/
 
 /*===== EXPERIENCE =====*/
@@ -520,6 +517,8 @@ img{
 .footer_link{
     color: var(--white-color);
     transition: color .4s;
+    padding: .2rem 1rem;
+    border-radius: 2rem;
 }
 
 .footer_link:hover{
@@ -640,6 +639,11 @@ img{
         height: 100%;
     }
 
+    .about_img{
+        transform: translateY(-1rem);
+        width: 200px;
+    }
+
     .project_container,
     .services_container{
         grid-template-columns: repeat(2, 350px);
@@ -700,7 +704,7 @@ img{
     }
 
     .profile_img{
-        width: 450px;
+        width: 400px;
     }
 
     .profile_data{
@@ -729,7 +733,8 @@ img{
     }
 
     .about_img{
-        transform: translateY(-1rem);
+        transform: translateY(-.8rem);
+        transform: translateX(1rem);
     }
 
     .skills{
