@@ -18,7 +18,7 @@
     --text-color: hsl(var(--hue), 2%, 66%);
     --body-color: hsl(var(--hue), 100%, 1%);
     --container-color: hsl(var(--hue), 2%, 10%);
-    --conic-gradient: linear-gradient(135deg, hsl(var(--hue), 80%, 45%), hsl(var(--hue), 80%, 15%));
+    --conic-gradient: linear-gradient(135deg, hsl(var(--hue), 80%, 35%), hsl(var(--hue), 80%, 10%));
 
     /*===== Font and typography =====*/
     /*===== .5rem = 8px | 1rem = 16px ... =====*/
