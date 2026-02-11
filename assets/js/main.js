@@ -6,22 +6,50 @@ const sendEmail = (e) =>{
     e.preventDefault()
 
     //serviceID - templateID - #form - publicKey
-    emailjs.sendForm('service_nrso6b1','template_oq02558','#contact-form','af2iQmJR3F0mGsrqr')
+   contactForm.addEventListener('submit', function(e){
 
-    .then(() =>{
-        // Show send message
+    // Page reload stop karta hai
+    e.preventDefault()
+
+
+    // ===============================
+    // EmailJS sendForm()
+    // serviceID, templateID, form
+    // ===============================
+    emailjs.sendForm(
+        'service_nrso6b1',     // 👉 apna service ID
+        'template_oq02558',   // 👉 apna template ID
+        this                  // 👉 current form
+    )
+
+    // ===============================
+    // SUCCESS
+    // ===============================
+    .then(() => {
+
+        // Success message show
         contactMessage.textContent = 'Message sent successfully ✅'
 
-        // Remove message after five seconds
-        setTimeout(() =>{
+        // 5 sec baad hide
+        setTimeout(() => {
             contactMessage.textContent = ''
         }, 5000)
 
-        // Clear input fields
+        // Form clear
         contactForm.reset()
-    }, () =>{
-        // Show error message
-        contactMessage.textContent = 'Message not sent (service error) ❌'
+    })
+
+
+    // ===============================
+    // ERROR
+    // ===============================
+    .catch((error) => {
+
+        console.log(error)
+
+        contactMessage.textContent = 'Server busy / message failed ❌'
+    })
+
 })
 }
 contactForm.addEventListener('submit', sendEmail)
